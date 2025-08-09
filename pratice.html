@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0%;
+        }
+        .header{
+            position: fixed;
+            background-color: antiquewhite;
+            width: 100%;
+            height: 100px;
+            padding: 25px;
+        }
+        .header>h1{
+            display: inline-block;
+            padding-left: 50px;
+            transition: all;
+            position: relative;
+
+        }
+        h1:hover{
+            color: green; 
+        }
+        .hover-list{
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 40px;
+            background-color: white;
+            padding: 10px;
+            color: gray;
+        
+        }
+            
+        .a:hover .hover-list{
+            display: block;
+
+        }
+        .b:hover .hover-list{
+            display: block;
+
+        }
+        .c:hover .hover-list{
+            display: block;
+
+        }
+        .d:hover .hover-list{
+            display: block;
+
+        }
+        
+    
+    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="a" >cources
+            <ul class="hover-list" >
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+            </ul>
+        </h1>
+        <h1 class="a" >tutorials
+            <ul class="hover-list" >
+                <li>Web Development</li>
+                <li>Gate</li>
+                <li>CS subjects</li>
+            </ul>
+        </h1>
+        <h1 class="a" >Practice
+            <ul class="hover-list" >
+                <li>Practice Coding problems</li>
+                <li>Problem of the day</li>
+                <li>Problem Solving</li>
+            </ul>
+        </h1>
+        <h1 class="a" >Jobs
+            <ul class="hover-list" >
+                <li>Apply Now</li>
+                <li>post Jobs</li>
+                <li>Become a mentor</li>
+            </ul>
+        </h1>
+        
+
+    </div>
+
+      
+</body>
+</html>
